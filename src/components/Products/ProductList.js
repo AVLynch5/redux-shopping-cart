@@ -3,10 +3,6 @@ import ProductListItem from './ProductListItem';
 
 class ProductList extends Component {
 
-    addProductToCart = () => {
-
-    }
-
     render() {
         return (
             <div>
