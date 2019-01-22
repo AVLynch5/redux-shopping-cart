@@ -17,7 +17,7 @@ const products = [
 
 // Array of products, this reducer is complete
 const productReducer = (state = products, action) => {
-    if (action.payload === 'ADD_NEW_PRODUCT') {
+    if (action.type === 'ADD_NEW_PRODUCT') {
         return [...state, action.payload];
     }
     return state;
