@@ -5,17 +5,34 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Redux
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+
+// Array of products are stored here
+const productReducer = (state = [], action) => {
+    // TODO: Add new products to this reducer
+
+
+    return state;
+};
+
+// Items in the cart
+const checkoutReducer = (state = [], action) => {
+    // TODO: Add ability to add products to the cart
+    
+    
+    return state;
+};
 
 // The store is the big JavaScript Object that holds all of the information for our application
 const storeInstance = createStore(
-    // This is a reducer... we'll talk about it in a minute, hang on for a second
-    () => {
-        console.log(`Hey!!! I'm a reducer y'all!!!`);
-    },
+    combineReducers({
+        productReducer,
+        checkoutReducer
+    }),    
 );
 
 // Wrap our App in a Provider, this makes Redux available in
 // our entire application
 ReactDOM.render(<Provider store={storeInstance}><App /></Provider>, document.getElementById('root'));
+registerServiceWorker();
