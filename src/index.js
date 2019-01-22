@@ -8,18 +8,24 @@ import registerServiceWorker from './registerServiceWorker';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 
-// Array of products are stored here
-const productReducer = (state = [], action) => {
-    // TODO: Add new products to this reducer
+// Default set of products
+const products = [
+    { name: `Marshmallow Mateys`, price: 6.98 },
+    { name: `Golden Honney O's`, price: 6.48 },
+    { name: `Frosted Flakes`, price: 3.98 },
+];
 
-
+// Array of products, this reducer is complete
+const productReducer = (state = products, action) => {
+    if (action.payload === 'ADD_NEW_PRODUCT') {
+        return [...state, action.payload];
+    }
     return state;
 };
 
-// Items in the cart
+// Items in the cart, this reducer is incomplete
 const checkoutReducer = (state = [], action) => {
-    // TODO: Add ability to add products to the cart
-    
+    // TODO: Products added to the cart
     
     return state;
 };

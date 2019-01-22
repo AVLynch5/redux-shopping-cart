@@ -6,7 +6,7 @@ class Products extends Component {
     constructor(props) {
         super(props);
 
-        // TODO: Move these products into the ProductReducer
+        // TODO: Use the productReducer instead of state
         this.state = {
             products: [
                 { name: 'Marshmallow Mateys', price: 6.98 },
@@ -18,6 +18,7 @@ class Products extends Component {
 
     addNewProduct = (product) => {
         console.log(product);
+        // TODO: Switch from using local state to dispatching an action
         this.setState({
             products: [...this.state.products, product],
         })

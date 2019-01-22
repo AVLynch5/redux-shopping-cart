@@ -8,11 +8,11 @@
 
 ## Tasks
 
-- [ ] Move products to the `productReducer` in `index.js`
-- [ ] Connect the **ProductForm** and **ProductList** to that reducer
-- [ ] When **Add to Cart** is clicked on, add that product to the `cartReducer`
-- [ ] Display products in the cart on the Checkout page
-- [ ] When the **Checkout** button is clicked, clear the cart and navigate the user back to the **Product** page
+- [ ] Update the **ProductList** to display from the `productReducer`
+- [ ] Update the **ProductForm** to dispatch to the `productReducer`
+- [ ] When **Add to Cart** is clicked on, dispatch that product to the `cartReducer`
+- [ ] Display products in the cart on the **Checkout** page
+- [ ] When the **Checkout** button is clicked on the **Checkout** page, clear the cart and navigate the user back to the **Product** page
 
 ## Stretch
 
