@@ -8,6 +8,7 @@
 
 ## Tasks
 
+- [ ] Add the Redux Logger
 - [ ] Update the **ProductList** to display from the `productReducer`
 - [ ] Update the **ProductForm** to dispatch to the `productReducer`
 - [ ] When **Add to Cart** is clicked on, dispatch that product to the `cartReducer`
