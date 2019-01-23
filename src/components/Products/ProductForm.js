@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 class ProductForm extends Component {
     constructor(props) {
         super(props);
-
-        // TODO: Move these products into the ProductReducer
+        // You will need to keep this state
         this.state = {
             productToAdd: {name: '', price: 0}
         }
@@ -30,6 +29,7 @@ class ProductForm extends Component {
 
     addProduct = (event) => {
         event.preventDefault();
+        // TODO: Dispatch here
         this.props.addNewProduct(this.state.productToAdd);
     }
 

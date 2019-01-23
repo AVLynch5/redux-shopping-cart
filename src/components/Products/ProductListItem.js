@@ -4,6 +4,8 @@ class ProductListItem extends Component {
 
     addProductToCart = () => {
         console.log(this.props.product);
+        // TODO: Dispatch here
+        
     }
 
     render() {
