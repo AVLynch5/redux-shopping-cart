@@ -2,13 +2,18 @@
 
 ## Setup
 
+- Fork
+- Clone
 - `npm install`
-- `npm run client`
-- No server for this activity
+- `npm start`
 
 ## Tasks
 
-- [ ] Add the Redux Logger
+Good news! A lot is already working here! After running `npm start`, you should be able to add a new product to the list. Our project has now grown so large that we would like to start using redux.
+
+Redux has been added to this project, but the project isn't really using redux. Follow these steps to integrate redux into the project.
+
+- [ ] Add the Redux Logger (If covered in lecture)
 - [ ] Update the **ProductList** to display from the `productReducer`
 - [ ] Update the **ProductForm** to dispatch to the `productReducer`
 - [ ] When **Add to Cart** is clicked on, dispatch that product to the `cartReducer`
@@ -17,6 +22,7 @@
 
 ## Stretch
 
+- [ ] In `ProductForm`, using currying to consolidate `handlePriceChange` and `handleNameChange` into a single function
 - [ ] Show the total cost on the Checkout page
 - [ ] Ability to remove from cart
 - [ ] Ability to remove a product

@@ -1,19 +1,15 @@
 import React, { Component } from 'react';
-import ProductForm from './ProductForm.js';
-import ProductList from './ProductList.js';
+import ProductForm from '../ProductForm/ProductForm';
+import ProductList from '../ProductList/ProductList';
 
 class Products extends Component {
-    constructor(props) {
-        super(props);
-
-        // TODO: Use the productReducer instead of state
-        this.state = {
-            products: [
-                { name: 'Marshmallow Mateys', price: 6.98 },
-                { name: `Golden Honney O's`, price: 6.48 },
-                { name: `Frosted Flakes`, price: 3.98 },
-            ],
-        }
+    // TODO: Use the productReducer instead of state
+    state = {
+        products: [
+            { name: 'Marshmallow Mateys', price: 6.98 },
+            { name: `Golden Honney O's`, price: 6.48 },
+            { name: `Frosted Flakes`, price: 3.98 },
+        ],
     }
 
     addNewProduct = (product) => {

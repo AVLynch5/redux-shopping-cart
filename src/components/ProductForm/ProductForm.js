@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
 class ProductForm extends Component {
-    constructor(props) {
-        super(props);
-        // You will need to keep this state
-        this.state = {
-            productToAdd: {name: '', price: 0}
-        }
+    // You will need to keep this state in this component
+    // if you're only using something in one component,
+    // you do not need to move it to redux
+    state = {
+        productToAdd: {name: '', price: 0}
     }
 
     handlePriceChange = (event) => {
