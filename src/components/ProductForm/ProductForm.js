@@ -28,8 +28,9 @@ class ProductForm extends Component {
 
     addProduct = (event) => {
         event.preventDefault();
-        // TODO: Dispatch here
+        // TODO: Dispatch here, instead of using addNewProduct from parent
         this.props.addNewProduct(this.state.productToAdd);
+        // TODO: Clear input fields
     }
 
     render() {
