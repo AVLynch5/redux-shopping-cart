@@ -4,8 +4,8 @@ import './App.css';
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 // Components
-import Products from '../Products/Products.js';
-import Checkout from '../Checkout/Checkout.js';
+import Products from '../Products/Products';
+import Checkout from '../Checkout/Checkout';
 
 function App() {
   
