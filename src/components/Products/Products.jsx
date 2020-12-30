@@ -23,9 +23,10 @@ function Products() {
     <div>
       <h2>Products</h2>
       {/* 
-                    TODO - When ProductForm & ProductList work with Redux directly,
-                    there is no longer a reason to pass props into these components.
-                 */}
+        TODO - When ProductForm & ProductList work with Redux directly,
+        there is no longer a reason to pass props into these components.
+      */}
+      
       <ProductForm addNewProduct={addNewProduct} />
       <ProductList products={products} />
     </div>
