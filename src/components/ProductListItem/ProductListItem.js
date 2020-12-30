@@ -1,20 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ProductListItem extends Component {
+// Displays a single Product with price on the DOM
+function ProductListItem(props) {
 
-    addProductToCart = () => {
-        console.log(this.props.product);
-        // TODO: Dispatch here
-        
-    }
+  function addProductToCart() {
+    console.log(props.product);
+    // TODO: Dispatch here
+  }
 
-    render() {
-        return (
-            <li>
-                {this.props.product.name}: {this.props.product.price} <button onClick={this.addProductToCart}>Add to Cart</button>
-            </li>
-        )
-    }
+  return (
+    <li>
+      {props.product.name}: {props.product.price}{' '}
+      <button onClick={addProductToCart}>Add to Cart</button>
+    </li>
+  );
 }
 
 export default ProductListItem;
