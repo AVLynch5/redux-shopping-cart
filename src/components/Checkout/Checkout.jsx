@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Checkout extends Component {
+function Checkout() {
 
-    handleCheckout = () => {
-        // TODO: Clear the cart and navigate to the product page
+  function handleCheckout() {
+    // TODO: Clear the cart and navigate to the product page
+  }
 
-    }
+  return (
+    <div>
+      <h2>Checkout</h2>
+      {/* TODO: Display items in the cart */}
 
-    render() {
-        return (
-            <div>
-                <h2>Checkout</h2>
-                {/* TODO: Display items in the cart */}
-
-                <button onClick={this.handleCheckout}>Checkout</button>
-            </div>
-        )
-    }
+      <button onClick={handleCheckout}>Checkout</button>
+    </div>
+  );
 }
 
 export default Checkout;
