@@ -31,13 +31,15 @@ function ProductForm(props) {
   };
 
   return (
-    <form onSubmit={() => addProduct(event)}>
+    <form onSubmit={(event) => addProduct(event)}>
       <input onChange={handleNameChange} type='text' placeholder='name' />
+
       <input
         onChange={handlePriceChange}
         type='text'
         placeholder='price'
       />
+      
       <input type='submit' value='Submit' />
     </form>
   );
