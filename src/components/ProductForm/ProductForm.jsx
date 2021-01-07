@@ -6,21 +6,21 @@ function ProductForm(props) {
   // you do not need to move it to redux
   let [productToAdd, setProductToAdd] = useState({ name: '', price: 0 });
 
-  function handlePriceChange(event) {
+  const handlePriceChange = (event) => {
     setProductToAdd({
       ...productToAdd,
       price: event.target.value,
     });
   }
 
-  function handleNameChange(event) {
+  const handleNameChange = (event) => {
     setProductToAdd({      
         ...productToAdd,
         name: event.target.value,      
     });
   }
 
-  function addProduct(event) {
+  const addProduct = (event) => {
     event.preventDefault();
     
     // TODO: Dispatch here, instead of using addNewProduct from parent

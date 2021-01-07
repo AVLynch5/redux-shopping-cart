@@ -3,7 +3,7 @@ import React from 'react';
 // Displays a single Product with price on the DOM
 function ProductListItem(props) {
 
-  function addProductToCart() {
+  const addProductToCart = () => {
     console.log(props.product);
     // TODO: Dispatch here
   }

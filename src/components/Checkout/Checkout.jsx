@@ -2,7 +2,7 @@ import React from 'react';
 
 function Checkout() {
 
-  function handleCheckout() {
+  const handleCheckout = () => {
     // TODO: Clear the cart and navigate to the product page
   }
 

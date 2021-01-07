@@ -13,7 +13,7 @@ function Products() {
   let [products, setProducts] = useState(productData);
 
   // TODO: This will be replaced by a method inside ProductForm
-  function addNewProduct(product) {
+  const addNewProduct = (product) => {
     console.log(product);
     
     setProducts([...products, product]);
