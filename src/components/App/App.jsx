@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 // Shorthand import, {} in import is called destructuring
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 // Components
-import Products from '../Products/Products.js';
-import Checkout from '../Checkout/Checkout.js';
+import Products from '../Products/Products';
+import Checkout from '../Checkout/Checkout';
 
-class App extends Component {
-  render() {
+function App() {
+  
     return (
       <div className="App">
         <h1>Redux Shopping Cart</h1>
@@ -29,7 +29,7 @@ class App extends Component {
         </Router>
       </div>
     );
-  }
+  
 }
 
 export default App;
