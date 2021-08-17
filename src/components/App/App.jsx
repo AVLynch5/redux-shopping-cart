@@ -6,6 +6,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 // Components
 import Products from '../Products/Products';
 import Checkout from '../Checkout/Checkout';
+console.log(Products);
 
 function App() {
   
@@ -23,8 +24,12 @@ function App() {
                 <Link to="/checkout">Checkout</Link>
               </li>
             </ul>
-            <Route exact path="/" component={Products} />
-            <Route exact path="/checkout" component={Checkout} />            
+            <Route exact path="/">
+              <Products />
+            </Route>
+            <Route exact path="/checkout">            
+              <Checkout />
+            </Route>
           </div>
         </Router>
       </div>
