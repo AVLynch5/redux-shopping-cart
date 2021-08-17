@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function ProductForm(props) {
+function ProductForm({ addNewProduct }) {
   // You will need to keep this state in this component
   // if you're only using something in one component,
   // you do not need to move it to redux
@@ -24,7 +24,7 @@ function ProductForm(props) {
     event.preventDefault();
     
     // TODO: Dispatch here, instead of using addNewProduct from parent
-    props.addNewProduct(productToAdd);
+    addNewProduct(productToAdd);
 
     // TODO: Clear input fields
 

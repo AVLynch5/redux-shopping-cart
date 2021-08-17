@@ -1,11 +1,11 @@
 import React from 'react';
 import ProductListItem from '../ProductListItem/ProductListItem';
 
-function ProductList(props) {
+function ProductList({ products }) {
   return (
     <div>
       <ul>
-        {props.products.map((product, i) => {
+        {products.map((product, i) => {
           return <ProductListItem key={i} product={product} />;
         })}
       </ul>
