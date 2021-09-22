@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/App';
+import logger from 'redux-logger';
 
 // Redux
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 
 // Default set of products
@@ -31,10 +32,13 @@ const checkoutReducer = (state = [], action) => {
 
 // The store is the big JavaScript Object that holds all of the information for our application
 const storeInstance = createStore(
-    combineReducers({
+    combineReducers(
+        {
         productReducer,
         checkoutReducer
-    }),    
+    }
+    ),
+    applyMiddleware(logger)
 );
 
 // Wrap our App in a Provider, this makes Redux available in
