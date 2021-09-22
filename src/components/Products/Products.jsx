@@ -13,11 +13,11 @@ function Products() {
   let [products, setProducts] = useState(productData);
 
   // TODO: This will be replaced by a method inside ProductForm
-  const addNewProduct = (product) => {
-    console.log(product);
+  // const addNewProduct = (product) => {
+  //   console.log(product);
     
-    setProducts([...products, product]);
-  }
+  //   setProducts([...products, product]);
+  // }
 
   return (
     <div>
@@ -27,9 +27,9 @@ function Products() {
         there is no longer a reason to pass props into these components.
       */}
 
-      <ProductForm addNewProduct={addNewProduct} />
+      <ProductForm />
       
-      <ProductList products={products} />
+      <ProductList />
     </div>
   );
 } // end Products
