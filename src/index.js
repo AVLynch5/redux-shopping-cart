@@ -29,6 +29,9 @@ const checkoutReducer = (state = [], action) => {
     if (action.type === 'ADD_TO_CART') {
         //if action.type is 'ADD_TO_CART' return a copy of checkoutReducer array with payload object added
         return [...state, action.payload];
+    } else if (action.type === 'CLEAR_CHECKOUT') {
+        //if action type is 'CLEAR CHECKOUT return an empty array
+        return [];
     }
     return state;
 };

@@ -7,7 +7,7 @@ function ProductForm() {
   // if you're only using something in one component,
   // you do not need to move it to redux
   //create default product const
-  const defaultProduct = { name: '', price: 0 };
+  const defaultProduct = { name: '', price: '' };
   //initialize with defaultProduct
   let [productToAdd, setProductToAdd] = useState(defaultProduct);
 

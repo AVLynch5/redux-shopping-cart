@@ -1,13 +1,18 @@
 import React from 'react';
 //import useSelector
-import {useSelector} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 
 function Checkout() {
   //access the store
   const reduxStore = useSelector(store => store);
+  //dispatch
+  const dispatch = useDispatch();
 
   const handleCheckout = () => {
     // TODO: Clear the cart and navigate to the product page
+    const action = {type: 'CLEAR_CHECKOUT'};
+    // TODO: Dispatch here
+    dispatch(action);
   }
 
   return (
