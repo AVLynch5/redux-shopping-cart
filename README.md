@@ -18,11 +18,11 @@ Redux has been added to this project, but the project isn't really using redux. 
 - [x] Update the **ProductForm** to dispatch to the `productReducer`
 - [x] When **Add to Cart** is clicked on, dispatch that product to the `checkoutReducer`
 - [x] Display products in the cart on the **Checkout** page
-- [ ] When the **Checkout** button is clicked on the **Checkout** page, clear the cart
+- [x] When the **Checkout** button is clicked on the **Checkout** page, clear the cart
 
 ## Stretch
 
-- When the **Checkout** button is clicked on the **Checkout** page, in addition to clearing the cart, navigate the user back to the **Product** page
+- [x] When the **Checkout** button is clicked on the **Checkout** page, in addition to clearing the cart, navigate the user back to the **Product** page
 - [ ] Show the total cost on the Checkout page
 - [ ] Ability to remove from cart
 - [ ] Ability to remove a product
