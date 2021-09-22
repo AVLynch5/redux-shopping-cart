@@ -6,7 +6,7 @@ import { HashRouter as Router, Route, Link } from 'react-router-dom';
 // Components
 import Products from '../Products/Products';
 import Checkout from '../Checkout/Checkout';
-console.log(Products);
+
 
 function App() {
   
